@@ -1,0 +1,37 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>Librería de etiquetas ejemplo</short-name>
+	<tag>
+		<name>mytag</name>
+		<tag-class>edu.ucam.tags.MyFirstClass</tag-class>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+	<tag>
+		<name>listpacientes</name>
+		<tagclass>edu.ucam.tags.recorrerPacientes</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>realiza un bucle</info>
+		<attribute>
+			<name>veces</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>listpacientes2</name>
+		<tagclass>edu.ucam.tags.recorrerPacientes2</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>realiza un bucle</info>
+		<attribute>
+			<name>veces</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib>
